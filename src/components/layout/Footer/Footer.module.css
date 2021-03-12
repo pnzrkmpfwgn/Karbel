@@ -1,0 +1,14 @@
+.background {
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(48, 48, 54);
+}
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}

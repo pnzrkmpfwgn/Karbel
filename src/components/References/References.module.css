@@ -1,0 +1,48 @@
+.icon_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.heading {
+  color: rgb(30, 34, 83);
+  font-size: 38px;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+.icon {
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(30, 34, 83);
+}
+
+.image_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.image {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  .image_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .image {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .image {
+    height: 319px;
+  }
+}

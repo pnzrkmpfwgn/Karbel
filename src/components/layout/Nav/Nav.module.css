@@ -1,0 +1,80 @@
+.Nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 140px;
+  background: rgb(108, 106, 145);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(108, 106, 145, 1) 0%,
+    rgb(173, 173, 204) 55%,
+    rgba(101, 115, 117, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(108, 106, 145, 1) 0%,
+    rgba(206, 206, 218, 1) 55%,
+    rgba(101, 115, 117, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(108, 106, 145, 1) 0%,
+    rgba(206, 206, 218, 1) 55%,
+    rgba(101, 115, 117, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c6a91",endColorstr="#657375",GradientType=1);
+}
+.logo {
+  height: 150px;
+  filter: drop-shadow(5px 1px 6px black);
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.links_container {
+  margin-right: 50px;
+  font-size: 22px;
+}
+.link {
+  display: inline;
+  padding: 5px;
+  text-decoration: underline;
+  color: rgb(30, 34, 83);
+  font-weight: bold;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.link:hover {
+  cursor: pointer;
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+.social_icons {
+  display: grid;
+  grid-template-columns: repeat(3, 10px);
+  margin-right: 70px;
+  gap: 50%;
+}
+.icon {
+  color: rgb(90, 90, 90);
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.icon:nth-child(1):hover {
+  color: rgb(94, 169, 221);
+}
+
+.icon:nth-child(2):hover {
+  color: rgb(66, 103, 178);
+}
+
+.icon:nth-child(3):hover {
+  color: rgb(2, 116, 179);
+}

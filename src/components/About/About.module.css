@@ -1,0 +1,20 @@
+.about_container {
+  margin-left: 30px;
+  width: 80%;
+  font-size: 24px;
+}
+
+.about_container h2 {
+  color: rgb(30, 34, 83);
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+.about_container p {
+  color: rgb(66, 75, 80);
+}
+
+@media only screen and (max-width: 768px) {
+  .about_container {
+    margin-top: 60px;
+  }
+}
