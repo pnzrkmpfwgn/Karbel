@@ -32,12 +32,12 @@ const Header=()=>{
         }
     }, [size]);
    // console.log(size);
-    return <header>
+    return <header title="Başlık" id="başlık" >
     {size > 768 ? (
         <Nav />
     ) : (
         <div ref={node}>
-        <img height={100}
+        <img id="logo" title="Karbel Çelik" height={100}
          style={{"position":"absolute","right":"0","marginRight":"15px","marginTop":"15px"}}
          src={'/assets/Logo.png'} alt="Logo"/>
         <div style={{"height":"100px"}} ></div>

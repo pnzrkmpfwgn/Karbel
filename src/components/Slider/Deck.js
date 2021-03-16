@@ -70,8 +70,8 @@ class Deck extends Component{
             )
         }
         this.setState({cards:new_cards})
-    }
-
+       
+    }   
     handle_next=()=>{
     if(!this.animation_in_progress){
         this.animation_in_progress = true;
@@ -111,7 +111,7 @@ class Deck extends Component{
         return;
     }
     }
-
+    
     handle_prev=()=>{
         if(!this.animation_in_progress){
             this.animation_in_progress = true;
@@ -154,12 +154,12 @@ class Deck extends Component{
     
     render(){
         return <div style={styles.container} >
-            <div ref={ref_id=>this.deck =ref_id} style={styles.deck}>
+            <div title="Karbel Çelik Galerisi" id="karbel_çelik_galerisi" ref={ref_id=>this.deck =ref_id} style={styles.deck}>
         {this.state.cards}
         </div>
         <div className={classes.button_container}>
-            <div onClick={this.handle_prev} className={classes.button} > <i  className="fa fa-chevron-left" ></i> </div>
-            <div onClick={this.handle_next} className={classes.button}> <i  className="fa fa-chevron-right" ></i> </div>
+            <div title="Geri Butonu" id="geri_butonu" onClick={this.handle_prev} className={classes.button} > <i  className="fa fa-chevron-left" ></i> </div>
+            <div title="İleri Butonu" id="ileri_butonu" onClick={this.handle_next} className={classes.button}> <i  className="fa fa-chevron-right" ></i> </div>
         </div>
         </div>
     }

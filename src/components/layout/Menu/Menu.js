@@ -5,8 +5,34 @@ const Menu = ({open, setOpen}) => {
   return (
     <StyledMenu open={open}>
       {' '}
-      <div onClick={()=>setOpen(!open)}>
-        Lorem
+      <div  onClick={()=>setOpen(!open)}>
+        <a className="link" title="Hakkımızda Linki" id="Hakkımızda_linki_menu" href="#Hakkımızda"> Hakkımızda </a>
+      </div>
+      
+      <div  onClick={()=>setOpen(!open)}>
+      <a className="link" title="Neden Karbel Linki" id="neden_karbel_linki_menu"  href="#Neden Karbel?"> Neden Karbel? </a>
+      </div>
+
+       <div  onClick={()=>setOpen(!open)}>
+       <a className="link" title="Hizmetlerimiz Linki" id="hizmetlerimiz_linki_menu" href="#Hizmetlerimiz"> Hizmetlerimiz </a>
+      </div>
+
+      <div  onClick={()=>setOpen(!open)}>
+      <a className="link" title="Referanslarımız Linki" id="referanslarımız_linki_menu" href="#Referanslarımız"> Referanslarımız </a>
+      </div>
+
+      <div  onClick={()=>setOpen(!open)}>
+      <a className="link" title="Tedarikçilerimiz Linki" id="Tedarikçilerimiz_linki_menu" href="#Tedarikçilerimiz"> Tedarikçilerimiz </a>
+      </div>
+
+      <div  onClick={()=>setOpen(!open)}>
+      <a className="link" title="İletişim Linki" id="iletişim_linki_menu" href="#İletişim"> İletişim </a>
+      </div>
+
+      <div>
+      <a href="#" title="Twitter Sayfası" id="twitter_sayfası_menu" ><i className={"fab fa-twitter-square fa-lg social_link"} ></i> </a>
+      <a href="#" title="Facebook Sayfası" id="facebook_sayfası_menu" ><i className={"fab fa-facebook-square fa-lg social_link"} ></i> </a>
+      <a href="#" title="Linkedin Sayfası" id="linkedin_sayfası_menu" ><i className={"fab fa-linkedin fa-lg social_link"} ></i> </a>
       </div>
       
     </StyledMenu>

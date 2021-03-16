@@ -1,22 +1,28 @@
 import classes from './Nav.module.css'
+import {useSpring,animated} from 'react-spring';
+
 
 const Nav=()=>{
-    return <nav className={classes.Nav} >
-        <img src={'/assets/Logo.png'} alt="logo" className={classes.logo} />
+    const animation=useSpring({
+        from: {opacity: 0, transform: 'translate3d(0,-50px,0)'},
+        to: {opacity: 1, transform: 'translate3d(0,0px,0)'},
+    })
+    return <animated.nav style={animation} className={classes.Nav} >
+        <img title="Karbel Çelik" id="logo" src={'/assets/Logo.png'} alt="logo" className={classes.logo} />
         <ul className={classes.links_container} >
-            <li className={classes.link} > Hakkımızda </li>
-            <li className={classes.link} > Neden Karbel </li>
-            <li className={classes.link} > Hizmetlerimiz </li>
-            <li className={classes.link} > Referanslarımız </li>
-            <li className={classes.link} > Tedarikçilerimiz </li>
-            <li className={classes.link} > İletişim </li>
+            <li><a className={classes.link} title="Hakkımızda Linki" id="hakkımızda_linki_nav" href="#Hakkımızda" >Hakkımızda</a> </li>
+            <li><a className={classes.link} title="Neden Karbel Linki" id="neden_karbel_linki_nav" href="#Neden Karbel?">Neden Karbel?</a>  </li>
+            <li><a className={classes.link} title="Hizmetlerimiz Linki" id="hizmetlerimiz_linki_nav" href="#Hizmetlerimiz">Hizmetlerimiz</a></li>
+            <li><a className={classes.link} title="Referanslarımız Linki" id="referanslarımız_linki_nav" href="#Referanslarımız" >Referanslarımız</a></li>
+            <li> <a className={classes.link} title="Tedarikçilerimiz Linki" id="tedarikçilerimiz_linki_nav" href="#Tedarikçilerimiz">Tedarikçilerimiz </a></li>
+            <li><a href="#İletişim" title="İletişim Linki" id="iletişim_linki_nav" className={classes.link}>İletişim</a>  </li>
         </ul>
         <div className={classes.social_icons} >
-            <i className={"fab fa-twitter-square fa-lg "+ classes.icon} ></i>
-            <i className={"fab fa-facebook-square fa-lg "+ classes.icon } ></i>
-            <i className={"fab fa-linkedin fa-lg "+ classes.icon } ></i>
+            <a href="#" title="Twitter Linki" id="twitter_linki_nav" ><i className={"fab fa-twitter-square fa-lg "+ classes.icon} ></i></a>
+            <a href="#" title="Facebook Linki" id="facebook_linki_nav" ><i className={"fab fa-facebook-square fa-lg "+ classes.icon } ></i> </a>
+            <a href="#" title="Linkedin Linki" id="linkedin_linki_nav"><i className={"fab fa-linkedin fa-lg "+ classes.icon } ></i> </a>
         </div>
-    </nav>
+    </animated.nav>
 }
 
 export default Nav;

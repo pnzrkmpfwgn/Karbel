@@ -6,18 +6,6 @@
   width: 100vw;
   height: 140px;
   background: rgb(108, 106, 145);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(108, 106, 145, 1) 0%,
-    rgb(173, 173, 204) 55%,
-    rgba(101, 115, 117, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(108, 106, 145, 1) 0%,
-    rgba(206, 206, 218, 1) 55%,
-    rgba(101, 115, 117, 1) 100%
-  );
   background: linear-gradient(
     0deg,
     rgba(108, 106, 145, 1) 0%,
@@ -28,7 +16,8 @@
 }
 .logo {
   height: 150px;
-  filter: drop-shadow(5px 1px 6px black);
+  -webkit-filter: drop-shadow(5px 1px 6px black);
+          filter: drop-shadow(5px 1px 6px black);
   margin-left: 10px;
   margin-bottom: 20px;
 }
@@ -37,8 +26,11 @@
   margin-right: 50px;
   font-size: 22px;
 }
-.link {
+.links_container li{
   display: inline;
+}
+
+.link {
   padding: 5px;
   text-decoration: underline;
   color: rgb(30, 34, 83);

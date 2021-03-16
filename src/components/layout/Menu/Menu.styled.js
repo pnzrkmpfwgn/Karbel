@@ -18,35 +18,46 @@ export const StyledMenu = styled.nav`
   @media (max-width: ${({theme}) => theme.mobile}) {
     width: 100%;
   }
-  img {
-    width: 200px;
-    height: 200px;
-    -webkit-filter: drop-shadow(2px 2px 2px #222);
-    filter: drop-shadow(2px 2px 2px #222);
-    cursor: pointer;
+  .link_container{
+    display: inline;
   }
   .link {
-    font-size: 2rem;
-    color: ${({theme}) => theme.primaryDark};
-    font-family: 'Anton', sans-serif;
+    display:inline
+    font-size:20px;
+    padding: 5px;
+    text-decoration: underline;
+    color: rgb(30, 34, 83);
     font-weight: bold;
-    letter-spacing: 0.19rem;
-    margin-top: 5px;
-    text-decoration: none;
-    transition: all 0.3s linear;
-    position: relative;
-    cursor: pointer;
-    padding: 10px 20px 10px 10px;
-    font-size: 20px;
-    font-style: italic;
-    @media (max-width: ${({theme}) => theme.mobile}) {
-      font-size: 1.5rem;
-      text-align: center;
+    margin-bottom:10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      cursor: pointer;
+      background-color: rgb(54, 54, 54);
+      color: white;
     }
-    &:hover {
-      color: ${({theme}) => theme.primaryHover};
-      text-shadow: 3px 3px 3px #222;
-      text-decoration: underline;
+  }
+  .social_icons_container{
+    margin-top:10px;
+  }
+  .social_link{
+    color: rgb(90, 90, 90);
+    margin-right:5px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      transform: scale(1.2);
+    }
+    &:nth-child(1):hover{
+      color: rgb(94, 169, 221);
+    }
+
+    &:nth-child(2):hover{
+      color: rgb(66, 103, 178);
+    }
+    
+    &:nth-child(3):hover{
+      color: rgb(2, 116, 179);
     }
   }
 `;

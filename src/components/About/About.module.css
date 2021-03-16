@@ -7,7 +7,7 @@
 .about_container h2 {
   color: rgb(30, 34, 83);
   text-decoration: underline;
-  text-underline-offset: 9px;
+  text-underline-offset: 9;
 }
 .about_container p {
   color: rgb(66, 75, 80);
