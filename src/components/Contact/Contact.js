@@ -21,7 +21,7 @@ const Contact=()=>{
         <p title="E-Posta" id="E-Posta" className={classes.title} > E-Posta : <span className={classes.info} > JohnDoe@gmail.com </span>  </p> 
         <p title="Adres" id="Adres" className={classes.title} > Adres :  <span className={classes.info} > Adres </span> </p> 
         </div>
-        <div title="Harita" id="Harita" className={classes.map} > Koyabilirsek Harita </div>
+        {/* <div title="Harita" id="Harita" className={classes.map} > Koyabilirsek Harita </div> */}
      </animated.div>
 }
 
