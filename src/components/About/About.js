@@ -16,8 +16,8 @@ const About =()=>{
     })
     return <animated.div ref={ref} style={animation} className={classes.about_container} > 
     <h2 title="Karbel Çelik Hakkında" id="karbel_çelik_hakkında" > Karbel Çelik Hakkında</h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis id itaque sequi odit distinctio explicabo molestias nemo officia esse, soluta voluptatum nostrum accusamus nulla iure dolorum? Quod ut est dolore? </p>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis id itaque sequi odit distinctio explicabo molestias nemo officia esse, soluta voluptatum nostrum accusamus nulla iure dolorum? Quod ut est dolore? </p>
+        <p> Çelik konstrüksiyon projelerinde büyük bir deneyime sahip olan firmamız kurulduğu yıldan bu yana, kısa sürede dünyanın prestijli markaları birlikte çalışarak bir çok projeye başarıyla imza atmış atmış ve alanında lider konuma gelmiştir. Firmamız alanındaki diğer kollar makina imalatı, taşeronluk hizmetleri ve bakım, onarım inşaat alanlarında da kaliteli hizmet sunmaktadır.</p>
+        <p> Alanında bulunduğu projeler arasında firmamız: otel inşaatları, sanayi tesisleri, köprüler, gökdelenler, fabrikalar gibi değişik mekanların çelik konstrüksiyon hizmetlerini, taşeronluk hizmetlerini, bakım-onarım inşaat hizmetleri ve bunun yanında makina imalatlarını kusursuz ve güvenilir ekip personeli ile birlikte yapmaktadır. Firmamız geçmişte olduğu gibi gelecekte de güvenilir ve kaliteli bir hizmet vermekten mutluluk duymaktadır. </p>
      </animated.div>
 }
 

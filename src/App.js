@@ -9,9 +9,8 @@ import References from './components/References/References';
 import WhyUs from './components/WhyUs/WhyUs';
 import Suppliers from './components/Suppliers/Suppliers';
 import Contact from './components/Contact/Contact';
-
 //React-Spring
-import {useSpring,animated,config} from 'react-spring';
+import {useSpring,animated} from 'react-spring';
 
 
 const App=()=>{
@@ -33,6 +32,7 @@ const App=()=>{
         }
     },[size]);
     return <>
+        
          <Layout > 
         <Landing/> 
        <animated.div style={animation} >

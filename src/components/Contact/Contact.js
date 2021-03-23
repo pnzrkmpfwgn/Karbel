@@ -17,9 +17,10 @@ const Contact=()=>{
     return <animated.div ref={ref} style={animation} className={classes.contact_container} > 
         <div className={classes.contact_info_container}>
         <h3 title="İletişim" id="iletişim" className={classes.heading}> İletişim </h3>
-        <p title="Telefon Numarası" id="telefon_numarası" className={classes.title} > Telefon Numarası : <span className={classes.info} > 444 31 66 </span> </p> 
-        <p title="E-Posta" id="E-Posta" className={classes.title} > E-Posta : <span className={classes.info} > JohnDoe@gmail.com </span>  </p> 
-        <p title="Adres" id="Adres" className={classes.title} > Adres :  <span className={classes.info} > Adres </span> </p> 
+        <p title="Telefon Numarası" id="telefon_numarası" className={classes.title} > Telefon Numarası : <span className={classes.info} > 0232 435 50 51 </span> </p> 
+        <p title="GSM" id ="gsm" className={classes.title}> GSM :  <span className={classes.info} > 0553 302 03 72 </span> </p>
+        <p title="E-Posta" id="E-Posta" className={classes.title} > E-Posta : <span className={classes.info} > karbelcelik@gmail.com </span>  </p> 
+        {/* <p title="Adres" id="Adres" className={classes.title} > Adres :  <span className={classes.info} > Adres </span> </p>  */}
         </div>
         {/* <div title="Harita" id="Harita" className={classes.map} > Koyabilirsek Harita </div> */}
      </animated.div>

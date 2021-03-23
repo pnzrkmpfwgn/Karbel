@@ -62,6 +62,71 @@
   background-color: rgb(30, 34, 83);
 }
 
+.info {
+  color: rgb(66, 75, 80);
+  width: 80%;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.accordion_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+
+.accordion:hover,
+.active {
+  background-color: #ccc;
+  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0.2);
+}
+
+.accordion_title {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(30, 34, 83);
+}
+
+.accordion_icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion_content {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.accordion_text {
+  font-size: 14px;
+  padding: 18px;
+}
+
+.slider {
+  background-position: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider_container {
+    width: 500px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .grid_container {
     display: flex;
