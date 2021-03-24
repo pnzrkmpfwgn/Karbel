@@ -18,9 +18,9 @@ const Nav=()=>{
             <li><a href="#İletişim" title="İletişim Linki" id="iletişim_linki_nav" className={classes.link}>İletişim</a>  </li>
         </ul>
         <div className={classes.social_icons} >
-            <a href="#" title="Twitter Linki" id="twitter_linki_nav" ><i className={"fab fa-twitter-square fa-lg "+ classes.icon} ></i></a>
-            <a href="#" title="Facebook Linki" id="facebook_linki_nav" ><i className={"fab fa-facebook-square fa-lg "+ classes.icon } ></i> </a>
-            <a href="#" title="Linkedin Linki" id="linkedin_linki_nav"><i className={"fab fa-linkedin fa-lg "+ classes.icon } ></i> </a>
+            <a href="https://twitter.com/KarbelC" title="Twitter Linki" id="twitter_linki_nav" ><i className={"fab fa-twitter-square fa-lg "+ classes.icon} ></i></a>
+            <a href="https://www.facebook.com/" title="Facebook Linki" id="facebook_linki_nav" ><i className={"fab fa-facebook-square fa-lg "+ classes.icon } ></i> </a>
+            <a href="https://www.linkedin.com/in/fikret-yi%C4%9Fit-24518a20a/" title="Linkedin Linki" id="linkedin_linki_nav"><i className={"fab fa-linkedin fa-lg "+ classes.icon } ></i> </a>
         </div>
     </animated.nav>
 }

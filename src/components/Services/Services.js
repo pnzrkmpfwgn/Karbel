@@ -1,5 +1,4 @@
 import classes from './Services.module.css';
-import Service from './Service';
 import {ServiceData} from '../../data/ServiceData';
 import useOnScreen from '../../utils/useOnScreen';
 import {useSpring,config,animated} from 'react-spring';

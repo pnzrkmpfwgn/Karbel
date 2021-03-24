@@ -30,9 +30,9 @@ const Menu = ({open, setOpen}) => {
       </div>
 
       <div>
-      <a href="#" title="Twitter Sayfası" id="twitter_sayfası_menu" ><i className={"fab fa-twitter-square fa-lg social_link"} ></i> </a>
-      <a href="#" title="Facebook Sayfası" id="facebook_sayfası_menu" ><i className={"fab fa-facebook-square fa-lg social_link"} ></i> </a>
-      <a href="#" title="Linkedin Sayfası" id="linkedin_sayfası_menu" ><i className={"fab fa-linkedin fa-lg social_link"} ></i> </a>
+      <a href="https://twitter.com/KarbelC" title="Twitter Sayfası" id="twitter_sayfası_menu" ><i className={"fab fa-twitter-square fa-lg social_link"} ></i> </a>
+      <a href="https://www.facebook.com/" title="Facebook Sayfası" id="facebook_sayfası_menu" ><i className={"fab fa-facebook-square fa-lg social_link"} ></i> </a>
+      <a href="https://www.linkedin.com/in/fikret-yi%C4%9Fit-24518a20a/" title="Linkedin Sayfası" id="linkedin_sayfası_menu" ><i className={"fab fa-linkedin fa-lg social_link"} ></i> </a>
       </div>
       
     </StyledMenu>

@@ -20,7 +20,7 @@ const Contact=()=>{
         <p title="Telefon Numarası" id="telefon_numarası" className={classes.title} > Telefon Numarası : <span className={classes.info} > 0232 435 50 51 </span> </p> 
         <p title="GSM" id ="gsm" className={classes.title}> GSM :  <span className={classes.info} > 0553 302 03 72 </span> </p>
         <p title="E-Posta" id="E-Posta" className={classes.title} > E-Posta : <span className={classes.info} > karbelcelik@gmail.com </span>  </p> 
-        {/* <p title="Adres" id="Adres" className={classes.title} > Adres :  <span className={classes.info} > Adres </span> </p>  */}
+        <p title="Adres" id="Adres" className={classes.title} > Adres :  <span className={classes.info} > 5032 Sokak No. 9 kat 4 Çınar Mahallesi Çamdibi Bornova</span> </p> 
         </div>
         {/* <div title="Harita" id="Harita" className={classes.map} > Koyabilirsek Harita </div> */}
      </animated.div>
