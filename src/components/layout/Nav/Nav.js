@@ -4,7 +4,7 @@ import {useSpring,animated} from 'react-spring';
 
 const Nav=()=>{
     const animation=useSpring({
-        from: {opacity: 0, transform: 'translate3d(0,-50px,0)'},
+        from: {opacity: 0.1, transform: 'translate3d(0,-50px,0)'},
         to: {opacity: 1, transform: 'translate3d(0,0px,0)'},
     })
     return <animated.nav style={animation} className={classes.Nav} >
@@ -19,7 +19,7 @@ const Nav=()=>{
         </ul>
         <div className={classes.social_icons} >
             <a href="https://twitter.com/KarbelC" title="Twitter Linki" id="twitter_linki_nav" ><i className={"fab fa-twitter-square fa-lg "+ classes.icon} ></i></a>
-            <a href="https://www.facebook.com/" title="Facebook Linki" id="facebook_linki_nav" ><i className={"fab fa-facebook-square fa-lg "+ classes.icon } ></i> </a>
+            <a href="https://www.facebook.com/Karbel-%C3%87elik-107643741432544" title="Facebook Linki" id="facebook_linki_nav" ><i className={"fab fa-facebook-square fa-lg "+ classes.icon } ></i> </a>
             <a href="https://www.linkedin.com/in/fikret-yi%C4%9Fit-24518a20a/" title="Linkedin Linki" id="linkedin_linki_nav"><i className={"fab fa-linkedin fa-lg "+ classes.icon } ></i> </a>
         </div>
     </animated.nav>
