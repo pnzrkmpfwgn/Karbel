@@ -22,9 +22,13 @@ const App=()=>{
         delay:2000
     })
     useEffect(()=>{
-        if (window.location.host.startsWith("www")){
-            window.location = window.location.protocol + window.location.host + window.location.pathname;
+        if(window.location.href.startsWith('https://www.')){
+            window.location.href="https://karbelcelik.com/"
+            console.log("executedf")
+        }else{
+            console.log("executed")
         }
+        
     },[])
     useEffect(()=>{
         const onResize = (e) => {
