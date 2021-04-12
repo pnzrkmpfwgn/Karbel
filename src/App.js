@@ -22,7 +22,7 @@ const App=()=>{
         delay:2000
     })
     useEffect(()=>{
-        if(window.location.href.startsWith('www.')){
+        if(window.location.href.startsWith('https://www.')){
             window.location.href="https://karbelcelik.com/"
             console.log("executedf")
         }else{
