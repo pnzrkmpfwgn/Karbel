@@ -7,7 +7,7 @@ import Accordion from './Accordion';
 const Services =()=>{
   const [ref,visible] = useOnScreen({rootMargin:'-100px'});
   const animation=useSpring({
-    from:{opacity:0.1,transform:'translate3d(0,50px,0)'},
+    from:{opacity:0.001,transform:'translate3d(0,50px,0)'},
     to:async(next)=>{
         if(visible){
             await next({opacity:1,transform:'translate3d(0,0px,0)'});

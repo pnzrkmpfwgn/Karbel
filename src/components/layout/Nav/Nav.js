@@ -4,7 +4,7 @@ import {useSpring,animated} from 'react-spring';
 
 const Nav=()=>{
     const animation=useSpring({
-        from: {opacity: 0.1, transform: 'translate3d(0,-50px,0)'},
+        from: {opacity: 0.001, transform: 'translate3d(0,-50px,0)'},
         to: {opacity: 1, transform: 'translate3d(0,0px,0)'},
     })
     return <animated.nav style={animation} className={classes.Nav} >

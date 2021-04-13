@@ -76,10 +76,10 @@ export const ServiceData=[
         image1:'./assets/services/1_m.jpg',
         image2:'./assets/services/2_m.jpg',
         image3:'./assets/services/3_m.jpg',
-        image4:'./assets/services/4_m.jpg',
+        image4:'./assets/services/4_m.jpeg',
         image5:'./assets/services/5_m.jpg',
-        title:'Makina İmalatı & Torna Freze İşleri',
-        key:'Makina İmalatı & Torna Freze İşleri'
+        title:'Makina İmalatı & Torna Freze İşleri & Makina CNC Şasesi',
+        key:'Makina İmalatı & Torna Freze İşleri & Makina CNC Şasesi'
     },
     {
         image1:'./assets/services/1_h.jpg',
