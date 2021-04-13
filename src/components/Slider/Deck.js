@@ -27,7 +27,7 @@ class Deck extends Component{
         let new_y = 0;
         let new_z = 0;
         let new_scale=0;
-        for(let i=0;i<9;i++){
+        for(let i=0;i<14;i++){
             if(i< middle_card_by_index){//left side of the deck
                 
                 //order the cards

@@ -3,7 +3,7 @@ import {useSpring,animated,config,} from 'react-spring';
 
 const Landing =()=>{
     const animation = useSpring({
-        from:{opacity:0.1,transform:'translate3d(50px,0,0)'},
+        from:{opacity:0.001,transform:'translate3d(50px,0,0)'},
         to:{opacity:1,transform:'translate3d(0px,0,0)'},
         delay:1000,
         config:config.wobbly
