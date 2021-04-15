@@ -64,20 +64,20 @@ export const ServiceData=[
         key:'İnşaat - Fabrika & Batar Kat İmalatı'
     },
     {
-        image1:'./assets/services/1_kon.jpg',
+        image1:'./assets/services/5_kon.jpg',
         image2:'./assets/services/2_kon.jpg',
         image3:'./assets/services/3_kon.jpg',
-        image4:'./assets/services/4_kon.jpg',
+        image4:'./assets/services/2_kon.jpg',
         image5:'./assets/services/5_kon.jpg',
         title:'Konveyör Bant Sistemleri',
         key:'Konveyör Bant Sistemleri'
     },
     {
-        image1:'./assets/services/1_m.jpg',
-        image2:'./assets/services/2_m.jpg',
-        image3:'./assets/services/3_m.jpg',
+        image1:'./assets/services/4_m.jpeg',
+        image2:'./assets/services/4_m.jpeg',
+        image3:'./assets/services/4_m.jpeg',
         image4:'./assets/services/4_m.jpeg',
-        image5:'./assets/services/5_m.jpg',
+        image5:'./assets/services/4_m.jpeg',
         title:'Makina İmalatı & Torna Freze İşleri & Makina CNC Şasesi',
         key:'Makina İmalatı & Torna Freze İşleri & Makina CNC Şasesi'
     },
