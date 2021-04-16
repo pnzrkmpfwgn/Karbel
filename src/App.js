@@ -22,15 +22,6 @@ const App=()=>{
         delay:2000
     })
     useEffect(()=>{
-        if(window.location.href.startsWith('https://www.')){
-            window.location.href="https://karbelcelik.com/"
-            console.log("executedf")
-        }else{
-            console.log("executed")
-        }
-        
-    },[])
-    useEffect(()=>{
         const onResize = (e) => {
             setSize(e.target.outerWidth);
         };
@@ -40,7 +31,6 @@ const App=()=>{
         }
     },[size]);
     return <>
-        
          <Layout > 
         <Landing/> 
        <animated.div style={animation} >
