@@ -11,10 +11,13 @@ class Deck extends Component{
         super(props);
 
         this.state={
-            cards:[]
+            cards:[],
         }
         this.animation_in_progress= false;
     }
+
+    
+
     componentDidMount(){
         let new_cards = [];
         let center={
@@ -70,7 +73,14 @@ class Deck extends Component{
             )
         }
         this.setState({cards:new_cards})
-       
+    }
+    update(){
+        setInterval(() => {
+            this.handle_next();
+        }, 6000);
+    }
+    componentDidUpdate(){
+        this.update();
     }   
     handle_next=()=>{
     if(!this.animation_in_progress){
