@@ -97,4 +97,7 @@
     flex-direction: column;
     align-items: center;
   }
+  .content:hover{
+    transform:none;
+  }
 }
