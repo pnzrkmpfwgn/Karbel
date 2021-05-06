@@ -22,12 +22,15 @@ const App=()=>{
         delay:2000
     })
     useEffect(()=>{
-        const onResize = (e) => {
-            setSize(e.target.outerWidth);
-        };
-        window.addEventListener('resize',onResize);
-        return ()=>{
-            window.removeEventListener('resize',onResize) ;
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            const onResize = (e) => {
+                setSize(e.target.outerWidth);
+            };
+            window.addEventListener('resize',onResize);
+           
+            return ()=>{
+                window.removeEventListener('resize',onResize) ;
+            }
         }
     },[size]);
     return <>
@@ -35,8 +38,8 @@ const App=()=>{
         <Landing/> 
        <animated.div style={animation} >
             <hr /> 
-            {size > 768 ? <Deck /> : null}  
-            {size > 768  ? <div style={{height:'350px',width:'100%'}} ></div> : <SwiperSlide />}
+            {size > 768 ? <Deck /> : null} 
+            {size > 768 ? <div style={{height:'350px',width:'100%'}} ></div> : <SwiperSlide />}
             <hr/>
        </animated.div>
         <div title="Hakkımızda" id="Hakkımızda" ><About /></div>

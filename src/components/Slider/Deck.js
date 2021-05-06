@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component,createRef} from 'react';
 import Card from './Card';
 import {ImageData} from '../../data/ImageData';
 import classes from './Slider.module.css';
@@ -14,6 +14,7 @@ class Deck extends Component{
             cards:[],
         }
         this.animation_in_progress= false;
+         this.deck = createRef();
     }
 
     
@@ -73,16 +74,16 @@ class Deck extends Component{
             )
         }
         this.setState({cards:new_cards})
+        this.update();
     }
     update(){
         setInterval(() => {
             this.handle_next();
         }, 6000);
     }
-    componentDidUpdate(){
-        this.update();
-    }   
+
     handle_next=()=>{
+        
     if(!this.animation_in_progress){
         this.animation_in_progress = true;
 
@@ -164,7 +165,7 @@ class Deck extends Component{
     
     render(){
         return <div style={styles.container} >
-            <div title="Karbel Çelik Galerisi" id="karbel_çelik_galerisi" ref={ref_id=>this.deck =ref_id} style={styles.deck}>
+            <div title="Karbel Çelik Galerisi" id="karbel_çelik_galerisi" ref={ref_id => this.deck = ref_id} style={styles.deck}>
         {this.state.cards}
         </div>
         <div className={classes.button_container}>
