@@ -179,7 +179,7 @@ class Deck extends Component{
 const styles={
     deck:{
         position:'absolute',
-        top:'60%',
+        top:'40%',
         left:'50%',
         transform:'translate(-60%,-50%)',
         height:'300px',
