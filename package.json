@@ -13,6 +13,7 @@
     "react-scripts": "4.0.3",
     "react-spring": "^8.0.27",
     "styled-components": "^5.2.1",
+    "watchpack-chokidar2": "^2.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
