@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-left:30px;
   margin-top: 80px;
   margin-bottom: 100px;
 }
@@ -9,7 +10,7 @@
   padding: 20px;
   background-color: rgb(21, 59, 182);
   border-radius: 15px;
-  width: 70%;
+  width: 50%;
 }
 
 .heading {
@@ -30,13 +31,66 @@
 }
 
 .map {
-  height: 300px;
-  width: 300px;
-  border: 2px solid black;
+  width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:50px;
 }
+
+.link_button{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 30px 15px;
+  padding:10px;
+  perspective: 1000px;
+  font-weight: bold;
+}
+.link_button a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.link_button a:before,
+.link_button a:after{
+  position: absolute;
+  content: "Konum";
+  height: 55px;
+  width: 180px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.link_button a:before{
+  color: #fff;
+  background: rgb(15, 71, 162);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.link_button a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.link_button a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.button_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 
 @media only screen and (max-width: 768px) {
   .contact_container {
@@ -44,6 +98,11 @@
     flex-direction: column;
   }
   .contact_info_container {
-    width: 100%;
+    width: 700%;
   }
+  .map {
+    width: 70%;
+    margin-left:70px;
+  }
+  
 }
