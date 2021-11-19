@@ -16,3 +16,4 @@ jobs:
           projectId: karbelcelik-1036c
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+          CI:false
