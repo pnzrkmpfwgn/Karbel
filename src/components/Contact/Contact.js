@@ -6,7 +6,7 @@ import {useWindowDimensions} from '../../utils/hooks';
 const Contact=()=>{
     const [ref,visible] = useOnScreen({rootMargin:'-100px'});
 
-    const {width,height} = useWindowDimensions();
+    const {width} = useWindowDimensions();
     const animation=useSpring({
         from:{opacity:0.001,transform:'translate3d(0,50px,0)'},
         to:async(next)=>{
