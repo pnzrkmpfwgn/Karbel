@@ -18,5 +18,3 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_KARBELCELIK_1036C }}'
           channelId: live
           projectId: karbelcelik-1036c
-        env:
-          FIREBASE_CLI_PREVIEWS: hostingchannels

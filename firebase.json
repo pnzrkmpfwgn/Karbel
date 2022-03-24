@@ -1,13 +1,6 @@
 {
   "hosting": {
-    "redirects":[
-      {
-        "source":"https://www.karbelcelik.com/",
-        "destination":"https://karbelcelik.com/",
-        "type":"301"
-      }
-    ],
-    "public": "build",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
