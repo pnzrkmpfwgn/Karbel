@@ -31,7 +31,7 @@ class Deck extends Component{
         let new_y = 0;
         let new_z = 0;
         let new_scale=0;
-        for(let i=0;i<14;i++){
+        for(let i=0;i<16;i++){
             if(i< middle_card_by_index){//left side of the deck
                 
                 //order the cards
@@ -117,7 +117,6 @@ class Deck extends Component{
             },100)
 
         },700)
-        
     }else{
         return;
     }
@@ -157,7 +156,6 @@ class Deck extends Component{
                 },100)
     
             },700)
-            
         }else{
             return;
         }
