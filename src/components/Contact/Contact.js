@@ -23,7 +23,7 @@ const Contact=()=>{
         {/* <p title="Telefon Numarası" id="telefon_numarası" className={classes.title} > Telefon Numarası : <span className={classes.info} > 0232 435 50 51 </span> </p>  */}
         <p title="GSM" id ="gsm" className={classes.title}> Telefon Numarası :  <span className={classes.info} > 0553 302 03 72 </span> </p>
         <p title="E-Posta" id="E-Posta" className={classes.title} > E-Posta : <span className={classes.info} > karbelcelik@gmail.com </span>  </p> 
-        <p title="Adres" id="Adres" className={classes.title} > Adres :  <span className={classes.info} > 7232/9 Sokak Aykop Sitesi No/40 Pınarbaşı Bornova İzmir</span> </p> 
+        {/* <p title="Adres" id="Adres" className={classes.title} > Adres :  <span className={classes.info} > 7232/9 Sokak Aykop Sitesi No/40 Pınarbaşı Bornova İzmir</span> </p>  */}
         </div>
         {width <=768 ? <div title="Harita" id="Harita" className={classes.map} > 
         <iframe title="Adres" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.940063879811!2d27.25103351533629!3d38.419749979647136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x836a340292ba75bb!2zMzjCsDI1JzExLjEiTiAyN8KwMTUnMTEuNiJF!5e0!3m2!1str!2s!4v1637328327452!5m2!1str!2s" 
