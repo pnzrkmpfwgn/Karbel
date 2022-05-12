@@ -15,6 +15,8 @@ export const ImageData=[
    '13.jpg',
    '14.jpeg',
    '15.jpg',
-   '16.jpeg'
+   '16.jpeg',
+   '17.jpg',
+   '18.jpg'
 
 ]
